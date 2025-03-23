@@ -129,7 +129,7 @@ export default function AppointmentForm() {
         <button
           type="submit"
           disabled={isSubmitting || isSubmitted}
-          className={`px-6 py-3 rounded-md transition-all duration-300 font-medium ${
+          className={`px-6 py-3 border border-[#ffffff] transition-all duration-300 font-medium ${
             isSubmitted ? "bg-green-600 text-white" : "bg-[#1e3a8a] hover:bg-blue-600 text-white"
           }`}
         >

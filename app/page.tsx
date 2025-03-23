@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-            <div className="w-full lg:w-1/2 space-y-6">
+            {/* <div className="w-full lg:w-1/2 space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in">
                 Find the <span className="text-[#1e3a8a]">Right Lawyer</span> for Your Legal Needs
               </h1>
@@ -95,7 +95,82 @@ export default function Home() {
                   </span>
                 </div>
               </div>
+            </div> */}
+
+<div className="w-full lg:w-1/2 space-y-6">
+          <div className="relative">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in mt-4">
+              Find the <span className="text-[#1e3a8a]">Right Lawyer</span> for Your Legal Needs
+              <div className="relative">
+                <div className="absolute -bottom-3 left-0 w-3/5 h-3">
+                  <svg viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+                    <path
+                      d="M1 17C71 5 142 -1 299 9"
+                      stroke="#1e3a8a"
+                      strokeWidth="6"
+                      fill="none"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-600 animate-fade-in-delay-1 mt-8">
+              Connect with experienced advocates, book consultations, and sign legal documents online - all in one
+              place.
+            </p>
+
+            <div className="bg-white p-4 rounded-xl shadow-lg animate-fade-in-delay-2 mt-6">
+              <div className="flex items-center gap-2 mb-4 text-gray-500 border-b pb-3">
+                <MapPin className="h-5 w-5 text-[#1e3a8a]" />
+                <div className="relative group">
+                  <button className="flex items-center gap-1 hover:text-[#1e3a8a] transition-colors">
+                    <span className="font-medium">Jaipur</span>
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                  <div className="absolute top-full left-0 mt-1 bg-white shadow-lg rounded-lg p-2 hidden group-hover:block z-20 min-w-[150px]">
+                    <ul className="space-y-1">
+                      {["Jaipur", "Udaipur", "Ajmer", "Jodhpur", "Kota"].map((city) => (
+                        <li key={city} className="px-3 py-1.5 hover:bg-blue-50 rounded cursor-pointer text-sm">
+                          {city}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search for lawyers, e-stamp services..."
+                  className="w-full p-3 pr-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1e3a8a] focus:border-transparent"
+                />
+                <div className="absolute right-3 top-1/2 -translate-y-1/2">
+                  <button className="bg-[#1e3a8a] text-white p-2 rounded-lg hover:bg-[#3767eb] transition-colors">
+                    <Search className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="px-3 py-1.5 bg-blue-50 text-[#1e3a8a] rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">
+                  E-Stamp
+                </span>
+                <span className="px-3 py-1.5 bg-blue-50 text-[#1e3a8a] rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">
+                  Legal Advice
+                </span>
+                <span className="px-3 py-1.5 bg-blue-50 text-[#1e3a8a] rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">
+                  Contract Review
+                </span>
+                <span className="px-3 py-1.5 bg-blue-50 text-[#1e3a8a] rounded-full text-sm font-medium cursor-pointer hover:bg-blue-100 transition-colors">
+                  Property Law
+                </span>
+              </div>
             </div>
+          </div>
+        </div>
 
             <div className="w-full lg:w-1/2 relative animate-fade-in-delay-3">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">

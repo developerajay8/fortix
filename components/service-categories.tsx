@@ -145,7 +145,7 @@ export default function ServiceCategories() {
         <div key={service.id} className="flip-card h-[250px] w-full perspective-1000 cursor-pointer">
           {/* Front of card (normal state) */}
           <div className="flip-card-inner relative w-full h-full transition-transform duration-500 transform-style-3d">
-            <div className="flip-card-front absolute w-full h-full backface-hidden bg-white rounded-xl border border-gray-100 p-6">
+            <div className="flip-card-front absolute w-full h-full backface-hidden bg-white rounded-xl border-2 border-gray-100 p-6">
               <div
                 className={`${service.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform`}
               >

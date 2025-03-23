@@ -58,14 +58,14 @@ export default function Navbar() {
               <div key={link.name} className="relative group">
                 {link.dropdown ? (
                   <button
-                    className="flex items-center text-gray-700 hover:text-blue-600 font-medium"
+                    className="flex items-center text-[#1e3a8a] hover:text-blue-600 font-medium"
                     onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)}
                   >
                     {link.name}
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
                 ) : (
-                  <Link href={link.href} className="text-gray-700 hover:text-blue-600 font-medium">
+                  <Link href={link.href} className="text-[#1e3a8a] hover:text-blue-600 font-medium">
                     {link.name}
                   </Link>
                 )}
@@ -76,7 +76,7 @@ export default function Navbar() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                        className="block px-4 py-2 text-sm text-[#1e3a8a] hover:bg-blue-50 hover:text-blue-600"
                       >
                         {item.name}
                       </Link>
@@ -89,15 +89,15 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/login" className="text-gray-700 hover:text-blue-600 font-medium">
+            <Link href="/login" className="text-[#1e3a8a] hover:text-blue-600 font-medium">
               Login
             </Link>
             <Link
-              href="/signup"
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Sign Up
-            </Link>
+  href="/signup"
+  className="bg-[#1e3a8a] text-white px-4 py-2  hover:border-[#203269] transition-all shadow-md"
+>
+  Sign Up
+</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -132,7 +132,7 @@ export default function Navbar() {
                             <Link
                               key={item.name}
                               href={item.href}
-                              className="block py-2 text-gray-600 hover:text-blue-600"
+                              className="block py-2 text-[#1e3a8a] hover:text-blue-600"
                               onClick={() => setIsOpen(false)}  
                             >
                               {item.name}
@@ -164,7 +164,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/signup"
-                className="w-full text-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+                className="w-full text-center bg-[#1e3a8a] text-white px-4 py-2 rounded-lg hover:bg-[#2d3b64]"
                 onClick={() => setIsOpen(false)}
               >
                 Sign Up
