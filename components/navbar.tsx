@@ -48,8 +48,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/image 1 (3).png" alt="FortiX Logo" className="h-[50px] md:block hidden" />
-            <img src="/mobile-logo.png" alt="FortiX Logo" className=" md:hidden block" />
+            <img src="/FortiX Transparent 1.png" alt="FortiX Logo" className=" h-[44px] md:block hidden" />
+            <img src="/FortiX Transparent 2.png" alt="FortiX Logo" className=" md:hidden block" />
           </Link>
 
           {/* Desktop Navigation */}
