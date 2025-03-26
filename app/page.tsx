@@ -136,11 +136,15 @@ export default function Home() {
 <div className="w-full lg:w-1/2">
             <div className=" relative animate-fade-in-delay-3">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                {/* <img
                   src="/hero-right-section-image.png"
                   alt="Legal consultation"
                   className="w-full h-[354px] object-cover"
-                />
+                /> */}
+                <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
+        <source src="/Get.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                   <div className="p-6 text-white">
                     <p className="text-lg font-medium">Book your consultation today</p>
@@ -285,6 +289,7 @@ export default function Home() {
       
       <Faq/>
       <Footer />
+
 
      
     </main>

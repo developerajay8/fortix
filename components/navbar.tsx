@@ -4,10 +4,10 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
-
+// import FindALawyer from "./findalawyer/find"
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "Find a Lawyer", href: "/find-lawyer" },
+  { name: "Find a Lawyer", href: "/findlawyer" },
   { name: "Book an Appointment", href: "/book-appointment" },
   {
     name: "Legal Contracts",
