@@ -4,11 +4,13 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
+import { FcAbout } from "react-icons/fc";
+
 // import FindALawyer from "./findalawyer/find"
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Find a Lawyer", href: "/findlawyer" },
-  { name: "Book an Appointment", href: "/book-appointment" },
+  { name: "Book an Appointment", href: "/bookappointment" },
   {
     name: "Legal Contracts",
     href: "#",
@@ -18,8 +20,17 @@ const navLinks = [
       { name: "E-Signature", href: "/contracts/signature" },
     ],
   },
+  {
+    name: "More",
+    href: "#",
+    dropdown: [
+      { name: "About us", href: "/aboutus" },
+      { name: "Contact us", href: "/contact" },
+      { name: "E-Signature", href: "/contracts/signature" },
+    ],
+  },
   // { name: "My Documents", href: "/documents" },
-  { name: "Knowledge Hub", href: "/knowledge-hub" },
+  // { name: "Knowledge Hub", href: "/aboutus" },
 ]
 
 export default function Navbar() {
@@ -48,7 +59,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/FortiX Transparent 1.png" alt="FortiX Logo" className=" h-[44px] md:block hidden" />
+            <img src="/xegalitylogo.png" alt="FortiX Logo" className=" h-[50px] md:block hidden" />
             <img src="/FortiX Transparent 2.png" alt="FortiX Logo" className=" md:hidden block" />
           </Link>
 
@@ -71,15 +82,17 @@ export default function Navbar() {
                 )}
 
                 {link.dropdown && (
-                  <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div className="absolute flex flex-wrap gap-4 w-[250px] left-0 mt-2 bg-white rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     {link.dropdown.map((item) => (
+                      <div key={item.name} className="flex items-center ">
+                    <FcAbout />
                       <Link
-                        key={item.name}
                         href={item.href}
                         className="block px-4 py-2 text-sm text-[#1e3a8a] hover:bg-blue-50 hover:text-blue-600"
                       >
                         {item.name}
                       </Link>
+                      </div>
                     ))}
                   </div>
                 )}

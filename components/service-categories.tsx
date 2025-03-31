@@ -142,52 +142,36 @@ export default function ServiceCategories() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {services.map((service) => (
-        <div key={service.id} className="flip-card h-[250px] w-full perspective-1000 cursor-pointer">
-          {/* Front of card (normal state) */}
-          <div className="flip-card-inner relative w-full h-full transition-transform duration-500 transform-style-3d">
-            <div className="flip-card-front absolute w-full h-full backface-hidden bg-white rounded-xl border-2 border-gray-100 p-6">
-              <div
-                className={`${service.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform`}
+        <div
+        key={service.id}
+        className="flip-card h-[250px] w-full perspective-1000 cursor-pointer group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+      >
+        {/* Front of card (normal state) */}
+        <div className="relative w-full h-full duration-500">
+          <div className="absolute w-full h-full bg-white rounded-xl border-2 border-gray-100 p-6">
+            <div className={`${service.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
+              <service.icon className="h-6 w-6" />
+            </div>
+      
+            <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+            <p className="text-gray-600 mb-4">{service.description}</p>
+      
+            <button className="text-blue-600 font-medium text-sm flex items-center">
+              Learn more
+              <svg
+                className="ml-1 h-4 w-4 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <service.icon className="h-6 w-6" />
-              </div>
-
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
-
-              <button className="text-blue-600 font-medium text-sm flex items-center">
-                Learn more
-                <svg
-                  className="ml-1 h-4 w-4 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Back of card (hover state) */}
-            <div
-              className="flip-card-back absolute w-full h-full backface-hidden rounded-xl overflow-hidden rotate-y-180"
-              style={{
-                backgroundImage: `url(${service.bgImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="absolute inset-0 bg-black/60 p-6 flex flex-col justify-center">
-                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                <p className="text-gray-200 mb-6">{service.description}</p>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors w-fit">
-                  Book Appointment
-                </button>
-              </div>
-            </div>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
+      </div>
+      
       ))}
     </div>
   )

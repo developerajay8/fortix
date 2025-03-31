@@ -128,3 +128,19 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
+.ourmission{
+  background: linear-gradient(96deg, #FFF5F3 0%, #FFF4F1 0.01%, #E8F4FF 100%);
+}
+
+
+:hover.shadow-card{
+  box-shadow: 4px 4px 9px 1px gray;
+
+}
+
+/* .shadow-card{
+  box-shadow: 1px 1px 5px 2px gray;
+
+
+} */

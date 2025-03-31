@@ -11,6 +11,8 @@ import Footer from "@/components/footer"
 import Local from "@/components/local"
 import Faq from "@/components/faq"
 import Cardtestimonial from "@/components/cardstestimonial"
+import Marquee from "react-fast-marquee"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -43,6 +45,7 @@ export default function Home() {
 
 <div className="w-full lg:w-1/2 space-y-5">
           <div className="relative">
+            <span className="px-[20px] py-[6px] bg-[#fff] border border-[#3b70ff] font-medium rounded-[50px] mb-[4px]">India's 1st Startup Mentorship Platform</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in mt-4">
               Find the <span className="text-[#1e3a8a]">Right Lawyer</span> for Your Legal Needs
               <div className="relative">
@@ -179,6 +182,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      {/* client image-slider */}
+
+<section className="py-12">
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center max-w-[1400px] mx-auto pb-[40px]" >
+  We have Advocates <span className="text-[#1e3a8a]"> from Top Companies </span>
+  </h2>
+  <Marquee direction="left" autoFill pauseOnHover className="">
+  <img src="/slide1.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  <img src="/slide2.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  <img src="/slide3.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  <img src="/slide4.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  <img src="/slide2.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  <img src="/slide5.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
+  </Marquee>
+</section>
+
 
       {/* Featured Services */}
       <section className="py-16 bg-white">
