@@ -190,9 +190,10 @@ export default function FindALawyer() {
 
   return (
     <div className=""><Navbar/>
-    <div className="container mx-auto px-4 py-8 max-w-[1400px]">
+    <div className="relative">
       {/* Hero Section */}
-      <div className="mb-10 text-center animate-fade-in pt-[150px]">
+      <img src="/banner.jpg" className="pt-[100px] " alt="" />
+      <div className="mb-10 absolute bottom-[260px] left-[25%] text-center animate-fade-in  bgbanner ">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Find the <span className="text-primary">Right Lawyer</span> for Your Case
         </h1>
@@ -201,10 +202,12 @@ export default function FindALawyer() {
           your needs.
         </p>
       </div>
+      </div>
 
+    <div className="container mx-auto px-4 py-8 max-w-[1400px]">
       {/* Search and Filter Section */}
-      <div className="bg-card rounded-xl max-w-[800px] mx-auto shadow-md p-6 mb-10">
-        <div className="flex flex-col md:flex-row gap-4 mb-6">
+      <div className="bg-card rounded-xl absolute bottom-[200px] w-full left-[32%] max-w-[600px] mx-auto shadow-md p-6 mb-10">
+        <div className="flex flex-col  md:flex-row gap-4 mb-6">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
             <Input

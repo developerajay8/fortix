@@ -139,8 +139,16 @@
 
 }
 
-/* .shadow-card{
+.jsondta{
   box-shadow: 1px 1px 5px 2px gray;
 
 
-} */
+}
+
+
+.bgbanner{
+  background-image: url("/public/banner.jpg");
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

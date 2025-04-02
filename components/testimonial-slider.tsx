@@ -57,19 +57,19 @@ export default function TestimonialSlider() {
   }
 
   return (
-    <div className="relative w-full">
-      <div className="space-y-6">
-        <div className="pb-[10px]">
+    <div className="relative w-[600px] mx-auto">
+      <div className="space-y-6 text-center">
+        <div className="pb-[10px] ">
           <p className="text-gray-500 mb-2">What People Say</p>
           <h2 className="text-3xl font-medium border-b pb-2 border-gray-200">Client Testimonial</h2>
         </div>
 
-        <div className=" relative">
+        <div className=" relative text-center">
           <div className="absolute text-5xl text-[#1e3a8a] top-0 left-0">"</div>
           <p className="pl-8 pr-4 text-gray-600 italic">{testimonials[currentIndex].quote}</p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center mx-auto w-[300px] gap-4">
           <div className="relative w-[90px] h-[90px] rounded-full overflow-hidden border-2 border-gray-200">
             <Image
               src={testimonials[currentIndex].avatar || "/placeholder.svg?height=64&width=64"}
@@ -84,7 +84,7 @@ export default function TestimonialSlider() {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 mt-4">
+        <div className="flex items-center mx-auto w-[70px] gap-2 mt-4">
           {testimonials.map((_, index) => (
             <button
               key={index}

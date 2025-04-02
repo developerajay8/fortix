@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { FcAbout } from "react-icons/fc";
+// import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 // import FindALawyer from "./findalawyer/find"
 const navLinks = [
@@ -12,10 +13,18 @@ const navLinks = [
   { name: "Find a Lawyer", href: "/findlawyer" },
   { name: "Book an Appointment", href: "/bookappointment" },
   {
+    name: "CA",
+    href: "#",
+    dropdown: [
+      { name: "first", href: "/ca" , ajay: "<FcAbout />"},
+      { name: "Custom Contracts", href: "/contracts/custom" , ajay: "<FcAbout />"},
+    ],
+  },
+  {
     name: "Legal Contracts",
     href: "#",
     dropdown: [
-      { name: "Browse Templates", href: "/contracts/templates" },
+      { name: "Browse Templates", href: "/contracts/templates"  },
       { name: "Custom Contracts", href: "/contracts/custom" },
       { name: "E-Signature", href: "/contracts/signature" },
     ],
@@ -85,7 +94,9 @@ export default function Navbar() {
                   <div className="absolute flex flex-wrap gap-4 w-[250px] left-0 mt-2 bg-white rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     {link.dropdown.map((item) => (
                       <div key={item.name} className="flex items-center ">
-                    <FcAbout />
+                        {/* <div className="">{item.icon}</div> */}
+                        
+                        {/* <div className={item.ajay}></div> */}
                       <Link
                         href={item.href}
                         className="block px-4 py-2 text-sm text-[#1e3a8a] hover:bg-blue-50 hover:text-blue-600"
@@ -102,15 +113,13 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/login" className="text-[#1e3a8a] hover:text-blue-600 font-medium">
-              Login
-            </Link>
-            <Link
-  href="/signup"
-  className="bg-[#1e3a8a] text-white px-4 py-2  hover:border-[#203269] transition-all shadow-md"
->
-  Sign Up
-</Link>
+            
+          <Link href="/signup" onClick={() => setIsOpen(false)} className="relative  px-6 py-3 rounded-[6px] text-[#ffffff] overflow-hidden group bg-[#1e3a8a]">
+        <span className="absolute w-0 group-hover:w-full transition-all duration-500 h-full bg-blue-600 left-0 top-0"></span>
+        <span className="absolute w-0 group-hover:w-full transition-all duration-500 h-full bg-blue-600 right-0 top-0"></span>
+       
+        <div className="relative text-[16px]">Login/Sign Up</div>
+      </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -168,20 +177,19 @@ export default function Navbar() {
             </nav>
 
             <div className="mt-6 flex items-center space-x-4 border-t pt-4">
-              <Link
-                href="/login"
-                className="w-full text-center text-gray-700 border border-gray-300 px-4 py-2 rounded-lg hover:bg-gray-50"
-                onClick={() => setIsOpen(false)}
-              >
-                Login
-              </Link>
-              <Link
+            <Link href="/signup" onClick={() => setIsOpen(false)} className="relative px-6 py-3 rounded-[6px] text-[#ffffff] overflow-hidden group bg-[#1e3a8a]">
+        <span className="absolute w-0 group-hover:w-full transition-all duration-500 h-full bg-blue-600 left-0 top-0"></span>
+        <span className="absolute w-0 group-hover:w-full transition-all duration-500 h-full bg-blue-600 right-0 top-0"></span>
+       
+        <div className="relative text-[16px]">Book an Appointment</div>
+      </Link>
+              {/* <Link
                 href="/signup"
                 className="w-full text-center bg-[#1e3a8a] text-white px-4 py-2 rounded-lg hover:bg-[#2d3b64]"
                 onClick={() => setIsOpen(false)}
               >
-                Sign Up
-              </Link>
+                Login/Sign Up
+              </Link> */}
             </div>
           </div>
         </div>
