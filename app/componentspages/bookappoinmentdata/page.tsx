@@ -4,8 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Clock, MapPin, Star, Verified } from "lucide-react";
-
-export default function Page() {
+import { X } from "lucide-react";
+import { useState } from "react";
+export default function Page(props: any) {
+  const [selectedPackage, setSelectedPackage] = useState<any>(null);
+  const { profile } = props;
   const profiles = [
     {
       id: 1,
@@ -15,7 +18,7 @@ export default function Page() {
       expertise: ["Fundraising", "Go To Market Strategy", "International Business", "Growth Strategy", "Sales"],
       description: "Ashim is a business leader with 15+ years across tech startups, consulting, and early-stage investing. Ashim has held CXO positions at organisations with global business reach and impact, from Jio-Haptik to WeWork. Ashim started his career in 2009 as a management consultant in Boston. After 2 years, he...",
       packages: [
-        { name: "All Access", duration: "60min", price: 12000 },
+        { name: "Unlock details", duration: "60min", price: 12000 },
         { name: "Regular", duration: "30min", price: 6000 }
       ]
     },
@@ -89,14 +92,17 @@ export default function Page() {
                       <h1 className="text-2xl font-bold">{profile.name}</h1>
                       <Verified className="text-blue-500 w-5 h-5" />
                     </div>
-                    <p className="text-gray-600 mb-4">{profile.title}</p>
+                    <p className="text-gray-600 mb-2">{profile.title}</p>
 
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="">
+                      <div className="font-semibold text-[16px] text-[black]">Expertise:</div>
+                    <div className="flex flex-wrap gap-2 my-4">
                       {profile.expertise.map((skill) => (
                         <Badge key={skill} variant="secondary">
                           {skill}
                         </Badge>
                       ))}
+                    </div>
                     </div>
                     <div className="flex gap-5 items-center">
 
@@ -128,9 +134,9 @@ export default function Page() {
               <div className="w-full md:w-72 space-y-6">
                 <div className="text-xl font-semibold mb-4">Packages</div>
 
-                <div className="space-y-4">
+                {/* <div className="space-y-4">
                   {profile.packages.map((pkg) => (
-                    <div key={pkg.name} className="p-4 bg-gray-50 rounded-lg">
+                    <div key={pkg.name} className="p-4 bg-gray-50 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                       <div className="flex justify-between items-start mb-2">
                         <div>
                           <h3 className="font-medium">{pkg.name}</h3>
@@ -143,7 +149,63 @@ export default function Page() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> */}
+
+<div className="space-y-4 relative">
+      {profile.packages.map((pkg: any) => (
+        <div
+          key={pkg.name}
+          className="p-4 bg-gray-50 hover:shadow-xl duration-700 rounded-lg cursor-pointer"
+          onClick={() => setSelectedPackage(pkg)}
+        >
+          <div className="flex justify-between items-start mb-2">
+            <div>
+              <h3 className="font-medium">{pkg.name}</h3>
+              <div className="flex items-center text-sm text-gray-600">
+                <Clock className="w-4 h-4 mr-1" />
+                1 Session X {pkg.duration}
+              </div>
+            </div>
+            <div className="text-lg font-semibold">₹{pkg.price}</div>
+          </div>
+        </div>
+      ))}
+
+      {selectedPackage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-black"
+              onClick={() => setSelectedPackage(null)}
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-semibold">{selectedPackage.name}</h2>
+              <img
+                src="/1-1616600959716.png" // Replace this with your actual image path
+                alt="Profile"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
+            </div>
+            <div className="mt-4 text-gray-600 text-sm">
+              <div className="flex items-center">
+                <Clock className="w-4 h-4 mr-1" />
+                1 Session X {selectedPackage.duration}
+              </div>
+              <p className="text-green-600 text-lg font-bold mt-2">
+                ₹{selectedPackage.price}
+              </p>
+            </div>
+            <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+              Buy Package
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
 
                 <Button className="w-full" size="lg">
                   View Plans

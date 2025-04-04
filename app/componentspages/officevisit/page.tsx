@@ -52,10 +52,10 @@ export default function Page() {
           {/* Right Section - Content */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Skip the office visit.<br />
                 Consult with a lawyer
-              </h1>
+              </h2>
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-blue-600 h-5 w-5" />

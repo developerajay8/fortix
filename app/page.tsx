@@ -45,7 +45,7 @@ export default function Home() {
 
 <div className="w-full lg:w-1/2 space-y-5">
           <div className="relative">
-            <span className="px-[20px] py-[6px] bg-[#fff] border border-[#3b70ff] font-medium rounded-[50px] mb-[4px]">India's 1st Startup Mentorship Platform</span>
+            <span className="px-[20px]  py-[6px]    bg-[#fff] border border-[#3b70ff] font-medium rounded-[50px] mb-[4px]">India's 1st Startup Mentorship Platform</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in mt-4">
               Find the <span className="text-[#1e3a8a]">Right Lawyer</span> for Your Legal Needs
               <div className="relative">
@@ -148,11 +148,13 @@ export default function Home() {
         <source src="/Get.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div className="md:block hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                   <div className="p-6 text-white">
                     <p className="text-lg font-medium">Book your consultation today</p>
                     <p className="text-sm opacity-80">100+ verified advocates available</p>
                   </div>
+                </div>
                 </div>
               </div>
 
@@ -186,9 +188,12 @@ export default function Home() {
       {/* client image-slider */}
 
 <section className="py-12">
-  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center max-w-[1400px] mx-auto pb-[40px]" >
+  <div className="max-w-[1400px] mx-auto pb-[40px]">
+  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center " >
   We have Advocates <span className="text-[#1e3a8a]"> from Top Companies </span>
   </h2>
+  <p className="text-lg text-gray-600  text-center">Experienced professionals ready to help with your legal matters</p>
+  </div>
   <Marquee direction="left" autoFill pauseOnHover className="">
   <img src="/slide1.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
   <img src="/slide2.webp" alt="FortiX Logo" className="mx-[40px] h-[50px] " />
@@ -201,7 +206,7 @@ export default function Home() {
 
 
       {/* Featured Services */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Legal <span className="text-[#1e3a8a]"> Services </span></h2>

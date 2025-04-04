@@ -192,12 +192,12 @@ export default function FindALawyer() {
     <div className=""><Navbar/>
     <div className="relative">
       {/* Hero Section */}
-      <img src="/banner.jpg" className="pt-[100px] " alt="" />
+      <img src="/Untitled-1.jpg" className="pt-[82px] " alt="" />
       <div className="mb-10 absolute bottom-[260px] left-[25%] text-center animate-fade-in  bgbanner ">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#fff]">
           Find the <span className="text-primary">Right Lawyer</span> for Your Case
         </h1>
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+        <p className="text-lg  text-[#ffffff] max-w-3xl mx-auto">
           Search and filter by expertise, location, rating, and availability to find the perfect legal professional for
           your needs.
         </p>
@@ -567,7 +567,7 @@ export default function FindALawyer() {
   {/* Why Choose Us Section */}
       <div className="max-w-[1400px] mx-auto my-16">
   <div className=" bg-card rounded-xl  p-8 animate-fade-in-up">
-        <h2 className="text-2xl font-bold text-center mb-8">
+        <h2 className="text-4xl font-bold text-center mb-8">
           Why Choose <span className="text-primary">fortiX</span> for Your Legal Needs?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -575,7 +575,7 @@ export default function FindALawyer() {
             <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Check className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">Verified Professionals</h3>
+            <h3 className="font-semibold text-2xl mb-2">Verified Professionals</h3>
             <p className="text-muted-foreground">
               All lawyers on our platform are verified and have their credentials checked.
             </p>
@@ -584,14 +584,14 @@ export default function FindALawyer() {
             <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <Star className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">Transparent Reviews</h3>
+            <h3 className="font-semibold text-2xl mb-2">Transparent Reviews</h3>
             <p className="text-muted-foreground">Read genuine reviews from clients who have worked with our lawyers.</p>
           </div>
           <div className="text-center">
             <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
               <ChevronRight className="h-8 w-8 text-primary" />
             </div>
-            <h3 className="font-semibold text-lg mb-2">Quick Consultations</h3>
+            <h3 className="font-semibold text-2xl mb-2">Quick Consultations</h3>
             <p className="text-muted-foreground">
               Book appointments online and get legal advice quickly and efficiently.
             </p>

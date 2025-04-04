@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
-import Mobileimage from "../../../public/image 2 (4).png"
+import Mobileimage from "../../../public/1,1.jpg"
 
 const testimonials = [
   {
@@ -46,9 +46,9 @@ export default function Page() {
           {/* left Section - Content */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Empowering Legal Excellence
-              </h1>
+              </h2>
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-blue-600 h-5 w-5" />
@@ -122,8 +122,8 @@ export default function Page() {
 
           {/* right Section - Mobile Image */}
           <div className="relative">
-            <div className=" p-2 shadow-2xl ">
-              <Image src={Mobileimage} alt=""/>
+            <div className=" ">
+              <Image src={Mobileimage} className=" rounded-[10px] " alt=""/>
               
             </div>
           </div>

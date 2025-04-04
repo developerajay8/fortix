@@ -144,11 +144,11 @@ export default function ServiceCategories() {
       {services.map((service) => (
         <div
         key={service.id}
-        className="flip-card h-[250px] w-full perspective-1000 cursor-pointer group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+        className="flip-card h-[250px] w-full perspective-1000 cursor-pointer group transition-all duration-300 hover:-translate-y-2  hover:shadow-lg"
       >
         {/* Front of card (normal state) */}
         <div className="relative w-full h-full duration-500">
-          <div className="absolute w-full h-full bg-white rounded-xl border-2 border-gray-100 p-6">
+          <div className="absolute w-full h-full shadow-sm bg-white rounded-xl border-2 border-gray-100 p-6">
             <div className={`${service.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
               <service.icon className="h-6 w-6" />
             </div>

@@ -69,7 +69,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img src="/xegalitylogo.png" alt="FortiX Logo" className=" h-[50px] md:block hidden" />
-            <img src="/FortiX Transparent 2.png" alt="FortiX Logo" className=" md:hidden block" />
+            <img src="/xegalitylogo.png" alt="FortiX Logo" className=" h-[40px] md:hidden block" />
           </Link>
 
           {/* Desktop Navigation */}
