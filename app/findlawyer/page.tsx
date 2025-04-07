@@ -21,6 +21,7 @@ const lawyers = [
   {
     id: 1,
     name: "Adv. Rajesh Sharma",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Corporate Law", "Mergers & Acquisitions"],
     location: "Delhi",
@@ -35,6 +36,7 @@ const lawyers = [
   {
     id: 2,
     name: "Adv. Priya Malhotra",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Family Law", "Divorce Law"],
     location: "Mumbai",
@@ -49,6 +51,7 @@ const lawyers = [
   {
     id: 3,
     name: "Adv. Vikram Singh",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Criminal Law", "Civil Litigation"],
     location: "Bangalore",
@@ -63,6 +66,7 @@ const lawyers = [
   {
     id: 4,
     name: "Adv. Ananya Desai",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Intellectual Property", "Patent Law"],
     location: "Hyderabad",
@@ -77,6 +81,7 @@ const lawyers = [
   {
     id: 5,
     name: "Adv. Arjun Kapoor",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Real Estate Law", "Property Disputes"],
     location: "Chennai",
@@ -91,6 +96,7 @@ const lawyers = [
   {
     id: 6,
     name: "Adv. Meera Reddy",
+    desc: "As a passionate and committed advocate, I specialize in providing strategic legal counsel in matters related to civil disputes, criminal defense, corporate litigation, and property law.",
     image: "/2.jpg",
     expertise: ["Immigration Law", "International Law"],
     location: "Pune",
@@ -468,14 +474,14 @@ export default function FindALawyer() {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1  gap-6">
+            <div className="grid grid-cols-1  gap-6  ">
               {filteredLawyers.length > 0 ? (
                 filteredLawyers.map((lawyer) => (
                   <div
                     key={lawyer.id}
-                    className="bg-card max-w-[1200px] mx-auto rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 animate-fade-in"
+                    className="bg-card cursor-pointer max-w-[1200px] mx-auto rounded-xl shadow-lg overflow-hidden hover:shadow-lg hover:scale-95 duration-700 shadow-card"
                   >
-                    <div className="grid grid-cols-12 gap-6 md:hover:scale-95 md:duration-700">
+                    <div className="grid grid-cols-12 gap-6 ">
                       <div className="p-6 md:col-span-8 col-span-full">
                         <div className="md:flex gap-5">
                           <div className="xl:pb-0 pb-[12px]">
@@ -483,7 +489,7 @@ export default function FindALawyer() {
                               <img
                                 src={lawyer.image || "/placeholder.svg"}
                                 alt={lawyer.name}
-                                className=" md:w-[200px] w-[140px] rounded-full object-cover"
+                                className=" md:w-[240px] w-[140px] rounded-full object-cover"
                               />
                               {lawyer.verified && (
                                 <div className="md:block hidden absolute md:right-1 right-[46%] bottom-2 bg-white text-primary-foreground rounded-full p-1">
@@ -497,7 +503,7 @@ export default function FindALawyer() {
                             <div className="flex items-start space-x-4 mb-4">
                               <div>
                                 <h3 className="font-semibold text-lg">{lawyer.name}</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nemo, laborum porro f molestias ea aliquam saepe unde nihil?</p>
+                                <p className="text-[16px]">{lawyer.desc}</p>
                                 <div className="flex items-center mt-1">
                                   <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
                                   <span className="ml-1 text-sm font-medium">{lawyer.rating}</span>
@@ -699,8 +705,8 @@ export default function FindALawyer() {
                         </div>
 
                         <Button className="w-full" size="lg">
-                  View Plans
-                </Button>
+                          View Plans
+                        </Button>
 
                       </div>
                     </div>

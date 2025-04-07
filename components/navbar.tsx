@@ -22,12 +22,7 @@ const navLinks = [
   },
   {
     name: "Legal Contracts",
-    href: "#",
-    dropdown: [
-      { name: "Browse Templates", href: "/contracts/templates"  },
-      { name: "Custom Contracts", href: "/contracts/custom" },
-      { name: "E-Signature", href: "/contracts/signature" },
-    ],
+    href: "/contracts"
   },
   {
     name: "More",
@@ -36,6 +31,7 @@ const navLinks = [
       { name: "About us", href: "/aboutus" },
       { name: "Contact us", href: "/contact" },
       { name: "Become a lawyer", href: "/becomealawyer" },
+      { name: "Blog", href: "/blog" },
     ],
   },
   // { name: "My Documents", href: "/documents" },

@@ -24,101 +24,7 @@ export default function page() {
             </div>
       </div>
 
-      <div className="bg-[#f0f9fe]">  
-        <div className="max-w-[1400px] mx-auto py-[40px] md:py-[80px]">
-          <div className=" rounded-xl  p-8 animate-fade-in-up">
-            <h2 className="text-4xl font-bold text-center mb-8">
-            Joining and User Calling <span className="text-primary">process</span> 
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Check className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-2xl mb-2">Application</h3>
-                <p className="text-muted-foreground text-[14px]">
-                  All lawyers on our platform are verified and have their credentials checked.
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Star className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-2xl mb-2"> Reviews</h3>
-                <p className="text-muted-foreground text-[14px]">Read genuine reviews from clients who have worked with our lawyers.</p>
-              </div>
-              <div className="text-center">
-                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <ChevronRight className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-semibold text-2xl mb-2">Onboarding</h3>
-                <p className="text-muted-foreground text-[14px]">
-                  Book appointments online and get legal advice quickly and efficiently.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <main className=" bg-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            What our Mentors say
-          </h2>
-          <div className="mt-2 h-1 w-20 bg-orange-500 mx-auto rounded-full"></div>
-        </div>
-
-        <div className="max-w-5xl mx-auto">
-          <div className="relative bg-white hover:bg-gray-100 rounded-2xl p-8 shadow-cards">
-            <div className="flex flex-col items-center text-center gap-6">
-              <div className="relative">
-                <div className="w-24 h-24 relative">
-                  <Image
-                    src="/1.jpg"
-                    alt="Dr Pradhyumn Singh"
-                    fill
-                    className="rounded-full object-cover"
-                  />
-                  <div className="absolute -bottom-2 -right-2 bg-orange-500 rounded-full p-2">
-                    <Star className="w-4 h-4 text-white" />
-                  </div>
-                </div>
-              </div>
-              
-              <h3 className="text-xl font-semibold text-gray-900">
-                Dr Pradhyumn Singh
-              </h3>
-              
-              <div className="relative">
-                <span className="absolute -top-6 left-0 text-gray-200 text-[120px] font-serif">
-                  "
-                </span>
-                <p className="text-gray-600 relative z-10 italic">
-                  Clearcut points and concise communication during the 1-on-1 session helped me gain a lot of insights for my business. Really appreciate the mentorship services.
-                </p>
-                <span className="absolute -top-6 right-0 text-gray-200 text-[120px] font-serif">
-                  "
-                </span>
-              </div>
-              
-              <div className="flex gap-1">
-                {[1, 2, 3, 4, 5].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-    <main className=" bg-gray-50">
+      <main className=" bg-gray-50">
       {/* Hero Section */}
       <section className="py-16 px-4 max-w-[1400px] mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
@@ -223,6 +129,106 @@ export default function page() {
         </div>
       </section>
     </main>
+
+      <div className="bg-[#f0f9fe]">  
+        <div className="max-w-[1400px] mx-auto py-[40px] md:py-[80px]">
+          <div className=" rounded-xl  p-8 animate-fade-in-up">
+            <h2 className="text-4xl font-bold text-center mb-8">
+            Joining and User Calling <span className="text-primary">process</span> 
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Check className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-semibold text-2xl mb-2">Application</h3>
+                <p className="text-muted-foreground text-[14px]">
+                  All lawyers on our platform are verified and have their credentials checked.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Star className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-semibold text-2xl mb-2"> Reviews</h3>
+                <p className="text-muted-foreground text-[14px]">Read genuine reviews from clients who have worked with our lawyers.</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-primary/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <ChevronRight className="h-8 w-8 text-primary" />
+                </div>
+                <h3 className="font-semibold text-2xl mb-2">Onboarding</h3>
+                <p className="text-muted-foreground text-[14px]">
+                  Book appointments online and get legal advice quickly and efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <main className=" bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+            What our Mentors say
+          </h2>
+          <div className="mt-2 h-1 w-20 bg-orange-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div className="max-w-5xl mx-auto">
+          <div className="relative bg-white hover:bg-gray-100 duration-700 rounded-2xl p-8 shadow-cards">
+            <div className="flex flex-col items-center text-center gap-6">
+              <div className="relative">
+                <div className="w-24 h-24 relative">
+                  <Image
+                    src="/1.jpg"
+                    alt="Dr Pradhyumn Singh"
+                    fill
+                    className="rounded-full object-cover"
+                  />
+                  <div className="absolute -bottom-2 -right-2 bg-orange-500 rounded-full p-2">
+                    <Star className="w-4 h-4 text-white" />
+                  </div>
+                </div>
+              </div>
+              
+              <h3 className="text-xl font-semibold text-gray-900">
+                Dr Pradhyumn Singh
+              </h3>
+              
+              <div className="relative">
+                <span className="absolute -top-6 left-0 text-gray-200 text-[120px] font-serif">
+                  "
+                </span>
+                <p className="text-gray-600 relative z-10 italic">
+                  Clearcut points and concise communication during the 1-on-1 session helped me gain a lot of insights for my business. Really appreciate the mentorship services.
+                </p>
+                <span className="absolute -top-6 right-0 text-gray-200 text-[120px] font-serif">
+                  "
+                </span>
+              </div>
+              
+              <div className="flex gap-1">
+                {[1, 2, 3, 4, 5].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      
+
+     
+
+
+    
 
     <Footer/>
     </div>
