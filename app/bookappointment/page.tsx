@@ -40,8 +40,8 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 import Bookappoinment from "@/app/componentspages/bookappoinmentdata/page"
-import Contractsinging from "@/app/componentspages/contract-signing/page"
-import Contractsinging2 from "@/app/componentspages/contract-signing2/page"
+// import Contractsinging from "@/app/componentspages/contract-signing/page"
+// import Contractsinging2 from "@/app/componentspages/contract-signing2/page"
 // Sample data for lawyers
 const lawyers = [
   {
@@ -508,8 +508,8 @@ export default function Page() {
   <Bookappoinment/>
 </div>
 
-<Contractsinging/>
-<Contractsinging2/>
+{/* <Contractsinging/> */}
+{/* <Contractsinging2/> */}
      
 
       <Footer />

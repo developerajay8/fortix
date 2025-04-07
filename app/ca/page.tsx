@@ -13,27 +13,12 @@ export default function page() {
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
 
-        <section className="py-16  max-w-[1400px] mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 grid-cols-1">
-            <div className="my-auto">
-              <h2 className="text-5xl font-bold mb-8">
-                Form successful Partnerships to advance your business.
-              </h2>
-              <p className="text-[#5e5e5e] text-lg">
-                Get a perfectly crafted Partnership Agreement by a senior Corporate Lawyer,
-                as per your exact needs and requirements.
-              </p>
-            </div>
-            <div className="">
-              <img src="/1-1616600959716.png" className="h-[500px]" alt="" />
-            </div>
-          </div>
-        </section>
+        
 
 
 
 
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-[1400px] pt-[160px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex flex-col md:flex-row gap-8 items-start">
             {/* Left Section */}
             <div className="w-full md:w-[60%]">

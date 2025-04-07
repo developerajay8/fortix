@@ -35,7 +35,7 @@ const navLinks = [
     dropdown: [
       { name: "About us", href: "/aboutus" },
       { name: "Contact us", href: "/contact" },
-      { name: "E-Signature", href: "/contracts/signature" },
+      { name: "Become a lawyer", href: "/becomealawyer" },
     ],
   },
   // { name: "My Documents", href: "/documents" },

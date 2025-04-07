@@ -7,6 +7,7 @@ import vision from "@/public/image 4.png"
 import Mission from "@/public/image 5.png"
 import ceo from "@/public/image 6.png"
 import Marquee from "react-fast-marquee"
+import AppointmentForm from "@/components/appointment-form"
 
 export default function AboutUs() {
 
@@ -327,98 +328,25 @@ export default function AboutUs() {
 </div>
       
       
-
-      {/* Our Team */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            Our <span className="text-blue-500">Team</span>
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="h-64 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Team member"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
+<section className="w-full bg-slate-900 text-white">
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[64px] items-center">
+            <div className="space-y-3">
+              <div>
+                <p className="text-[#ada282] mb-2 text-[16px]">For Our Honorable Clients</p>
+                <h2 className="text-[36px] text-[#ffffff]  font-light mb-4">Free Consulting</h2>
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Rajiv Mehta</h3>
-                <p className="text-blue-500 mb-4">Chief Legal Officer</p>
-                <p className="text-gray-600">
-                  With over 15 years of experience in corporate law, Rajiv leads our legal strategy and ensures the
-                  highest quality of service.
-                </p>
-              </div>
+              <p className="text-[#c0b596] text-[18px]">Call us 24/7 at (888)123-4567 or fill out the form.</p>
+              <p className="text-gray-300 mt-8 pt-[20px] text-[16px] w-[90%]">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less readable English.
+              </p>
             </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="h-64 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Team member"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Priya Sharma</h3>
-                <p className="text-blue-500 mb-4">Head of Operations</p>
-                <p className="text-gray-600">
-                  Priya ensures that our platform runs smoothly, connecting clients with the right legal professionals
-                  efficiently.
-                </p>
-              </div>
-            </div>
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <div className="h-64 overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Team member"
-                  width={400}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Arjun Patel</h3>
-                <p className="text-blue-500 mb-4">Technology Director</p>
-                <p className="text-gray-600">
-                  Arjun leads our tech team, developing innovative solutions to make legal services more accessible and
-                  user-friendly.
-                </p>
-              </div>
-            </div>
+            <AppointmentForm />
           </div>
         </div>
       </section>
-
-      {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-blue-600 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Connect with experienced advocates, book consultations, and sign legal documents online - all in one place.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/book-an-appointment"
-              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold text-lg transition-colors"
-            >
-              Book an Appointment
-            </Link>
-            <Link
-              href="/contact-us"
-              className="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-md font-semibold text-lg transition-colors"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
-      </section>
+     
     </main>
     <Footer/>
     </div>
