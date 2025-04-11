@@ -1,11 +1,8 @@
 "use client";
 
-import { AlertDialogTrigger } from "@/components/ui/alert-dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Dialog, DialogHeader, DialogTrigger } from "@/components/ui/dialog";
-import { DialogContent, DialogTitle } from "@radix-ui/react-dialog";
 import { Clock, MapPin, Star, Verified } from "lucide-react";
 import { X } from "lucide-react";
 import { useState } from "react";
@@ -142,7 +139,7 @@ export default function Page(props: any) {
 
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-50 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Unlock details</h3>
@@ -192,7 +189,7 @@ export default function Page(props: any) {
                 </div>
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-50 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Call & Video call</h3>
@@ -242,7 +239,7 @@ export default function Page(props: any) {
                 </div>
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-50 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Chat details</h3>
