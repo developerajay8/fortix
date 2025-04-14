@@ -4,8 +4,11 @@ import Link from "next/link"
 import AppointmentForm from "@/components/appointment-form"
 
 import Navbar from "@/components/navbar"
-import FeaturedAdvocates from "@/components/featured-advocates"
+import Navbarsec from "@/components/navbarsecond"
+// import FeaturedAdvocates from "@/components/featured-advocates"
 import ServiceCategories from "@/components/service-categories"
+import Servicedatahomepage from "./componentspages/servicesdatahomepage/page"
+import Servicestwopointdatahomesection from "./componentspages/servicestwopointdatahomesection/page"
 import HowItWorks from "@/components/how-it-works"
 import Footer from "@/components/footer"
 import Local from "@/components/local"
@@ -16,7 +19,7 @@ import Marquee from "react-fast-marquee"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
+      <Navbarsec />
 
 
       {/* Hero Section */}
@@ -44,7 +47,7 @@ export default function Home() {
 
             <div className="w-full lg:w-1/2 space-y-5">
               <div className="relative">
-                <span className="px-[20px]  py-[6px]    bg-[#fff] border border-[#3b70ff] font-medium rounded-[50px] mb-[4px]">India's 1st Startup Mentorship Platform</span>
+                <span className="px-[20px]  py-[6px]    bg-[#fff] border border-[#3b70ff] font-medium rounded-[50px] mb-[4px]">India's 1st Startup Mentorship </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in mt-4">
                   Find the <span className="text-[#1e3a8a]">Right Lawyer</span> for Your Legal Needs
                   <div className="relative">
@@ -235,7 +238,10 @@ export default function Home() {
             </Link>
           </div>
 
-          <FeaturedAdvocates />
+          {/* <FeaturedAdvocates /> */}
+          {/* <Servicedatahomepage/> */}
+          <Servicestwopointdatahomesection/>
+
 
           <div className="mt-10 text-center md:hidden">
             <Link

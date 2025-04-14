@@ -10,7 +10,7 @@ export default function page() {
   return (
     <div className="">
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className=" bg-white">
         {/* Hero Section */}
 
         
@@ -49,6 +49,46 @@ export default function page() {
                 <span className="text-gray-600">People purchased</span>
               </div>
 
+              <div className=" md:hidden block w-full md:w-[40%] bg-gray-50 p-6 rounded-lg ">
+              <h2 className="text-2xl font-bold mb-4">Startup Documents</h2>
+
+              <div className="mb-6">
+                <div className="flex justify-between items-center mb-2">
+                  <span>Business Partnership Agreement</span>
+                  <div className="text-right">
+                    <div className="text-gray-400 line-through text-sm">₹19999</div>
+                    <div className="font-bold text-xl">₹6499</div>
+                    <div className="text-red-500 text-sm">(70% Off)</div>
+                  </div>
+                </div>
+                <div className="text-right text-green-600 text-sm">SAVE ₹15500</div>
+              </div>
+
+              <div className="border-t border-b py-4 mb-6">
+                <div className="flex justify-between mb-2">
+                  <span>Gross Total</span>
+                  <span className="font-bold">₹6499</span>
+                </div>
+              </div>
+
+              <div className="bg-blue-50 p-4 rounded-lg mb-6">
+                <h3 className="font-semibold mb-2">Deliverables *</h3>
+                <ol className="list-decimal list-inside text-gray-600">
+                  <li>Partnership Agreement drafting</li>
+                  <li>Consultation call with the expert lawyer</li>
+                </ol>
+              </div>
+
+              <button className="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                ORDER NOW
+              </button>
+
+              <div className="mt-4 flex flex-wrap gap-2 justify-center">
+                <img src="/slide1.webp" alt="Visa" className="h-6" />
+                <img src="/slide1.webp" alt="Mastercard" className="h-6" />
+                <img src="/slide1.webp" alt="Maestro" className="h-6" />
+              </div>
+            </div>
 
 
               <section className="mb-16">
@@ -241,7 +281,7 @@ export default function page() {
             </div>
 
             {/* Right Section - Price Card */}
-            <div className="w-full md:w-[40%] bg-gray-50 p-6 rounded-lg sticky top-[90px]">
+            <div className=" md:block hidden w-full md:w-[40%] bg-gray-50 p-6 rounded-lg sticky top-[90px]">
               <h2 className="text-2xl font-bold mb-4">Startup Documents</h2>
 
               <div className="mb-6">

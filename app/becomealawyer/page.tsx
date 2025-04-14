@@ -1,3 +1,4 @@
+import CardTestimonial from '@/components/cardstestimonial'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar'
 import { Button } from '@/components/ui/button'
@@ -30,7 +31,7 @@ export default function page() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-900">
           Why should you become mentor on Expertbells?
         </h2>
-        <p className="text-lg text-gray-600 ">
+        <p className="text-lg text-gray-600 ">scb 
           If you have the expertise and the passion to guide and mentor budding entrepreneurs, then becoming a mentor on Expertbells is the perfect opportunity for you. Join our community of successful industry leaders and help 
         </p>
 
@@ -167,7 +168,7 @@ export default function page() {
         </div>
       </div>
       
-      <main className=" bg-white py-16">
+      {/* <main className=" bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -221,7 +222,11 @@ export default function page() {
           </div>
         </div>
       </div>
-    </main>
+    </main> */}
+
+    <div className="w-full">
+              <CardTestimonial />
+            </div>
 
       
 

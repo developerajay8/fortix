@@ -82,8 +82,8 @@ export default function Page(props: any) {
             <div className="flex flex-col md:flex-row gap-8">
               {/* Profile Section */}
               <div className="flex-1">
-                <div className="flex items-start gap-4">
-                  <div className=" ">
+                <div className="md:flex md:items-start md:gap-4">
+                  <div className="md:block hidden  ">
                     <img
                       src={profile.image}
                       alt={profile.name}
@@ -91,10 +91,27 @@ export default function Page(props: any) {
                     />
                   </div>
                   <div className="flex-1">
+                    <div className="md:hidden block  mb-2">
+                      <img
+                        src={profile.image}
+                        alt={profile.name}
+                        className="rounded-full flex items-center flex-col justify-center w-24 h-24 md:w-32 md:h-32 object-cover"
+                      />
+                    </div>
                     <div className="flex items-center gap-2 mb-1">
                       <h1 className="text-2xl font-bold">{profile.name}</h1>
                       <Verified className="text-blue-500 w-5 h-5" />
+                      <div className="sm:block hidden ">
+                      <div className="flex gap-2 ">
+                        <b className="pl-3">Mobile No</b> <div className="font-[400] "> 91+ 9293949596 </div>
+                      </div>
+                      </div>
                     </div>
+                    <div className="sm:hidden block py-1 ">
+                      <div className="flex gap-2 ">
+                        <b className="">Mobile No</b> <div className="font-[400] "> 91+ 9293949596 </div>
+                      </div>
+                      </div>
                     <p className="text-gray-600 mb-2">{profile.title}</p>
 
                     <div className="">
@@ -107,13 +124,22 @@ export default function Page(props: any) {
                         ))}
                       </div>
                     </div>
-                    <div className="flex gap-5 items-center">
 
+                    <div className="flex gap-5 items-center">
                       <div className="text-[16px] text-[#000000] "> <b> Experience: </b> 15+ years  </div>
                       <div className="flex items-center gap-[6px] text-sm text-muted-foreground">
                         <MapPin className=" h-[20px] text-blue-600 " />
                         <div className="text-black">Jaipur</div>
                       </div>
+                      <div className="sm:block hidden">
+                        <div className="flex items-center mt-1">
+                          <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+                          <span className="ml-1 text-sm font-medium">9.9</span>
+                          <span className="ml-1 text-sm text-muted-foreground">( reviews)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="sm:hidden block pt-1">
                       <div className="flex items-center mt-1">
                         <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
                         <span className="ml-1 text-sm font-medium">9.9</span>
@@ -121,7 +147,7 @@ export default function Page(props: any) {
                       </div>
                     </div>
 
-                    <p className="text-gray-700 mt-6">
+                    <p className="text-gray-700 md:line-clamp-5 line-clamp-2  mt-6">
                       {profile.description}
                       <button className="text-blue-600 hover:text-blue-700 ml-1">
                         Read More...
@@ -139,7 +165,7 @@ export default function Page(props: any) {
 
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Unlock details</h3>
@@ -153,43 +179,43 @@ export default function Page(props: any) {
                   </div>
 
                   {isopen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-black"
-              onClick={() => setisOpen(false)}
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold">All Access</h2>
-              <img
-                src="/1-1616600959716.png" // Replace this with your actual image path
-                alt="Profile"
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-            </div>
-            <div className="mt-4 text-gray-600 text-sm">
-              <div className="flex items-center">
-                <Clock className="w-4 h-4 mr-1" />
-                1 Session X <span>60 minutes</span>
-              </div>
-              <p className="text-green-600 text-lg font-bold mt-2">
-                ₹ 1200000
-              </p>
-            </div>
-            <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-              Buy Package
-            </button>
-          </div>
-        </div>
-      )}
+                    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                      <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                        <button
+                          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                          onClick={() => setisOpen(false)}
+                        >
+                          <X className="w-6 h-6" />
+                        </button>
+                        <div className="flex items-center justify-between">
+                          <h2 className="text-lg font-semibold">All Access</h2>
+                          <img
+                            src="/1-1616600959716.png" // Replace this with your actual image path
+                            alt="Profile"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                        </div>
+                        <div className="mt-4 text-gray-600 text-sm">
+                          <div className="flex items-center">
+                            <Clock className="w-4 h-4 mr-1" />
+                            1 Session X <span>60 minutes</span>
+                          </div>
+                          <p className="text-green-600 text-lg font-bold mt-2">
+                            ₹ 1200000
+                          </p>
+                        </div>
+                        <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                          Buy Package
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Call & Video call</h3>
@@ -203,43 +229,43 @@ export default function Page(props: any) {
                   </div>
 
                   {isopen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-black"
-              onClick={() => setisOpen(false)}
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold">All Access</h2>
-              <img
-                src="/1-1616600959716.png" // Replace this with your actual image path
-                alt="Profile"
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-            </div>
-            <div className="mt-4 text-gray-600 text-sm">
-              <div className="flex items-center">
-                <Clock className="w-4 h-4 mr-1" />
-                1 Session X <span>60 minutes</span>
-              </div>
-              <p className="text-green-600 text-lg font-bold mt-2">
-                ₹ 1200000
-              </p>
-            </div>
-            <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-              Buy Package
-            </button>
-          </div>
-        </div>
-      )}
+                    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                      <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                        <button
+                          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                          onClick={() => setisOpen(false)}
+                        >
+                          <X className="w-6 h-6" />
+                        </button>
+                        <div className="flex items-center justify-between">
+                          <h2 className="text-lg font-semibold">All Access</h2>
+                          <img
+                            src="/1-1616600959716.png" // Replace this with your actual image path
+                            alt="Profile"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                        </div>
+                        <div className="mt-4 text-gray-600 text-sm">
+                          <div className="flex items-center">
+                            <Clock className="w-4 h-4 mr-1" />
+                            1 Session X <span>60 minutes</span>
+                          </div>
+                          <p className="text-green-600 text-lg font-bold mt-2">
+                            ₹ 1200000
+                          </p>
+                        </div>
+                        <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                          Buy Package
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-2">
-                  <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                  <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <h3 className="font-medium">Chat details</h3>
@@ -253,39 +279,39 @@ export default function Page(props: any) {
                   </div>
 
                   {isopen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-black"
-              onClick={() => setisOpen(false)}
-            >
-              <X className="w-6 h-6" />
-            </button>
-            <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold">All Access</h2>
-              <img
-                src="/1-1616600959716.png" // Replace this with your actual image path
-                alt="Profile"
-                width={50}
-                height={50}
-                className="rounded-full"
-              />
-            </div>
-            <div className="mt-4 text-gray-600 text-sm">
-              <div className="flex items-center">
-                <Clock className="w-4 h-4 mr-1" />
-                1 Session X <span>60 minutes</span>
-              </div>
-              <p className="text-green-600 text-lg font-bold mt-2">
-                ₹ 1200000
-              </p>
-            </div>
-            <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-              Buy Package
-            </button>
-          </div>
-        </div>
-      )}
+                    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                      <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                        <button
+                          className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                          onClick={() => setisOpen(false)}
+                        >
+                          <X className="w-6 h-6" />
+                        </button>
+                        <div className="flex items-center justify-between">
+                          <h2 className="text-lg font-semibold">All Access</h2>
+                          <img
+                            src="/1-1616600959716.png" // Replace this with your actual image path
+                            alt="Profile"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                          />
+                        </div>
+                        <div className="mt-4 text-gray-600 text-sm">
+                          <div className="flex items-center">
+                            <Clock className="w-4 h-4 mr-1" />
+                            1 Session X <span>60 minutes</span>
+                          </div>
+                          <p className="text-green-600 text-lg font-bold mt-2">
+                            ₹ 1200000
+                          </p>
+                        </div>
+                        <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                          Buy Package
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* <Button className="w-full" size="lg">

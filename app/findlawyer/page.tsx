@@ -551,158 +551,158 @@ export default function FindALawyer() {
                           </div>
                         </div>
                       </div>
-                      <div className="md:col-span-4 col-span-full p-6">
+                      <div className="md:col-span-4 col-span-full md:p-6">
                         <div className="text-xl font-semibold mb-1">Packages</div>
 
                         <div className="space-y-2 mb-[10px]">
-                                          <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
-                                            <div className="flex justify-between items-start mb-2">
-                                              <div>
-                                                <h3 className="font-medium">Unlock details</h3>
-                                                <div className="flex items-center text-sm text-gray-600">
-                                                  <Clock className="w-4 h-4 mr-1" />
-                                                  1 Session X <span>60 minutes</span>
-                                                </div>
-                                              </div>
-                                              <div className="text-lg font-semibold">₹220000</div>
-                                            </div>
-                                          </div>
-                        
-                                          {isopen && (
-                                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                                  <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-                                    <button
-                                      className="absolute top-2 right-2 text-gray-500 hover:text-black"
-                                      onClick={() => setisOpen(false)}
-                                    >
-                                      <X className="w-6 h-6" />
-                                    </button>
-                                    <div className="flex items-center justify-between">
-                                      <h2 className="text-lg font-semibold">All Access</h2>
-                                      <img
-                                        src="/1-1616600959716.png" // Replace this with your actual image path
-                                        alt="Profile"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-full"
-                                      />
-                                    </div>
-                                    <div className="mt-4 text-gray-600 text-sm">
-                                      <div className="flex items-center">
-                                        <Clock className="w-4 h-4 mr-1" />
-                                        1 Session X <span>60 minutes</span>
-                                      </div>
-                                      <p className="text-green-600 text-lg font-bold mt-2">
-                                        ₹ 1200000
-                                      </p>
-                                    </div>
-                                    <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-                                      Buy Package
-                                    </button>
-                                  </div>
+                          <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                            <div className="flex justify-between items-start mb-2">
+                              <div>
+                                <h3 className="font-medium">Unlock details</h3>
+                                <div className="flex items-center text-sm text-gray-600">
+                                  <Clock className="w-4 h-4 mr-1" />
+                                  1 Session X <span>60 minutes</span>
                                 </div>
-                              )}
-                         </div>
+                              </div>
+                              <div className="text-lg font-semibold">₹220000</div>
+                            </div>
+                          </div>
+
+                          {isopen && (
+                            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                              <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                                <button
+                                  className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                                  onClick={() => setisOpen(false)}
+                                >
+                                  <X className="w-6 h-6" />
+                                </button>
+                                <div className="flex items-center justify-between">
+                                  <h2 className="text-lg font-semibold">All Access</h2>
+                                  <img
+                                    src="/1-1616600959716.png" // Replace this with your actual image path
+                                    alt="Profile"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-full"
+                                  />
+                                </div>
+                                <div className="mt-4 text-gray-600 text-sm">
+                                  <div className="flex items-center">
+                                    <Clock className="w-4 h-4 mr-1" />
+                                    1 Session X <span>60 minutes</span>
+                                  </div>
+                                  <p className="text-green-600 text-lg font-bold mt-2">
+                                    ₹ 1200000
+                                  </p>
+                                </div>
+                                <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                                  Buy Package
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
 
                         <div className="space-y-2 mb-[10px]" >
-                                          <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
-                                            <div className="flex justify-between items-start mb-2">
-                                              <div>
-                                                <h3 className="font-medium">Call & video call</h3>
-                                                <div className="flex items-center text-sm text-gray-600">
-                                                  <Clock className="w-4 h-4 mr-1" />
-                                                  1 Session X <span>60 minutes</span>
-                                                </div>
-                                              </div>
-                                              <div className="text-lg font-semibold">₹220000</div>
-                                            </div>
-                                          </div>
-                        
-                                          {isopen && (
-                                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                                  <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-                                    <button
-                                      className="absolute top-2 right-2 text-gray-500 hover:text-black"
-                                      onClick={() => setisOpen(false)}
-                                    >
-                                      <X className="w-6 h-6" />
-                                    </button>
-                                    <div className="flex items-center justify-between">
-                                      <h2 className="text-lg font-semibold">All Access</h2>
-                                      <img
-                                        src="/1-1616600959716.png" // Replace this with your actual image path
-                                        alt="Profile"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-full"
-                                      />
-                                    </div>
-                                    <div className="mt-4 text-gray-600 text-sm">
-                                      <div className="flex items-center">
-                                        <Clock className="w-4 h-4 mr-1" />
-                                        1 Session X <span>60 minutes</span>
-                                      </div>
-                                      <p className="text-green-600 text-lg font-bold mt-2">
-                                        ₹ 1200000
-                                      </p>
-                                    </div>
-                                    <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-                                      Buy Package
-                                    </button>
-                                  </div>
+                          <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                            <div className="flex justify-between items-start mb-2">
+                              <div>
+                                <h3 className="font-medium">Call & video call</h3>
+                                <div className="flex items-center text-sm text-gray-600">
+                                  <Clock className="w-4 h-4 mr-1" />
+                                  1 Session X <span>60 minutes</span>
                                 </div>
-                              )}
-                         </div>
+                              </div>
+                              <div className="text-lg font-semibold">₹220000</div>
+                            </div>
+                          </div>
 
-                         <div className="space-y-2 mb-[10px]">
-                                          <div onClick={() =>setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
-                                            <div className="flex justify-between items-start mb-2">
-                                              <div>
-                                                <h3 className="font-medium">Chat</h3>
-                                                <div className="flex items-center text-sm text-gray-600">
-                                                  <Clock className="w-4 h-4 mr-1" />
-                                                  1 Session X <span>60 minutes</span>
-                                                </div>
-                                              </div>
-                                              <div className="text-lg font-semibold">₹220000</div>
-                                            </div>
-                                          </div>
-                        
-                                          {isopen && (
-                                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                                  <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
-                                    <button
-                                      className="absolute top-2 right-2 text-gray-500 hover:text-black"
-                                      onClick={() => setisOpen(false)}
-                                    >
-                                      <X className="w-6 h-6" />
-                                    </button>
-                                    <div className="flex items-center justify-between">
-                                      <h2 className="text-lg font-semibold">All Access</h2>
-                                      <img
-                                        src="/1-1616600959716.png" // Replace this with your actual image path
-                                        alt="Profile"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-full"
-                                      />
-                                    </div>
-                                    <div className="mt-4 text-gray-600 text-sm">
-                                      <div className="flex items-center">
-                                        <Clock className="w-4 h-4 mr-1" />
-                                        1 Session X <span>60 minutes</span>
-                                      </div>
-                                      <p className="text-green-600 text-lg font-bold mt-2">
-                                        ₹ 1200000
-                                      </p>
-                                    </div>
-                                    <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
-                                      Buy Package
-                                    </button>
-                                  </div>
+                          {isopen && (
+                            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                              <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                                <button
+                                  className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                                  onClick={() => setisOpen(false)}
+                                >
+                                  <X className="w-6 h-6" />
+                                </button>
+                                <div className="flex items-center justify-between">
+                                  <h2 className="text-lg font-semibold">All Access</h2>
+                                  <img
+                                    src="/1-1616600959716.png" // Replace this with your actual image path
+                                    alt="Profile"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-full"
+                                  />
                                 </div>
-                              )}
-                         </div>
+                                <div className="mt-4 text-gray-600 text-sm">
+                                  <div className="flex items-center">
+                                    <Clock className="w-4 h-4 mr-1" />
+                                    1 Session X <span>60 minutes</span>
+                                  </div>
+                                  <p className="text-green-600 text-lg font-bold mt-2">
+                                    ₹ 1200000
+                                  </p>
+                                </div>
+                                <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                                  Buy Package
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="space-y-2 mb-[10px]">
+                          <div onClick={() => setisOpen(true)} className="p-4 bg-gray-200 hover:shadow-xl duration-700 rounded-lg cursor-pointer">
+                            <div className="flex justify-between items-start mb-2">
+                              <div>
+                                <h3 className="font-medium">Chat</h3>
+                                <div className="flex items-center text-sm text-gray-600">
+                                  <Clock className="w-4 h-4 mr-1" />
+                                  1 Session X <span>60 minutes</span>
+                                </div>
+                              </div>
+                              <div className="text-lg font-semibold">₹220000</div>
+                            </div>
+                          </div>
+
+                          {isopen && (
+                            <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+                              <div className="bg-white p-6 rounded-lg shadow-xl w-80 relative">
+                                <button
+                                  className="absolute top-2 right-2 text-gray-500 hover:text-black"
+                                  onClick={() => setisOpen(false)}
+                                >
+                                  <X className="w-6 h-6" />
+                                </button>
+                                <div className="flex items-center justify-between">
+                                  <h2 className="text-lg font-semibold">All Access</h2>
+                                  <img
+                                    src="/1-1616600959716.png" // Replace this with your actual image path
+                                    alt="Profile"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-full"
+                                  />
+                                </div>
+                                <div className="mt-4 text-gray-600 text-sm">
+                                  <div className="flex items-center">
+                                    <Clock className="w-4 h-4 mr-1" />
+                                    1 Session X <span>60 minutes</span>
+                                  </div>
+                                  <p className="text-green-600 text-lg font-bold mt-2">
+                                    ₹ 1200000
+                                  </p>
+                                </div>
+                                <button className="mt-4 w-full bg-black text-white py-2 rounded-md">
+                                  Buy Package
+                                </button>
+                              </div>
+                            </div>
+                          )}
+                        </div>
 
                         {/* <Button className="w-full" size="lg">
                           View Plans
